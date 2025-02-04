@@ -27,7 +27,7 @@ Const.APP_DATES_CSV = "appdates.csv";
 
 // Set up source code URL
 (function() {
-  let username = "espruino";
+  let username = "jasmaa";
   let githubMatch = window.location.href.match(/\/([\w-]+)\.github\.io/);
   if (githubMatch) username = githubMatch[1];
   Const.APP_SOURCECODE_URL = `https://github.com/${username}/BangleApps/tree/master/apps`;
