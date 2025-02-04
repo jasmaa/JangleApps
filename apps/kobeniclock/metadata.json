@@ -1,0 +1,29 @@
+{
+  "id": "kobeniclock",
+  "name": "Kobeni Clock",
+  "version": "0.01",
+  "description": "A clock face featuring Kobeni",
+  "icon": "docs/kobeniclock.png",
+  "screenshots": [
+    {
+      "url": "docs/screenshot.png"
+    }
+  ],
+  "type": "clock",
+  "tags": "clock",
+  "supports": [
+    "BANGLEJS2"
+  ],
+  "allow_emulator": true,
+  "storage": [
+    {
+      "name": "kobeniclock.app.js",
+      "url": "app.js"
+    },
+    {
+      "name": "kobeniclock.img",
+      "url": "app-icon.js",
+      "evaluate": true
+    }
+  ]
+}
