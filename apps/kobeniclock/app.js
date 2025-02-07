@@ -13,14 +13,14 @@ let drawTimeout;
 let draw = function () {
   var date = new Date();
   var timeStr = require("locale").time(date, 1);
-  var meridiem = require("locale").meridian(date)
+  var meridian = require("locale").meridian(date);
   g.reset();
   g.clearRect(0, Y - 50, 200, Y);
   g.setFont("7x11Numeric7Seg", 4);
   g.setFontAlign(1, 1);
   g.drawString(timeStr, X, Y, true);
   g.setFont("4x6", 3);
-  g.drawString(meridiem, X + 30, Y, true);
+  g.drawString(meridian, X + 30, Y, true);
 
   // queue next draw
   if (drawTimeout) clearTimeout(drawTimeout);

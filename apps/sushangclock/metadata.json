@@ -1,7 +1,7 @@
 {
   "id": "sushangclock",
   "name": "Sushang Clock",
-  "version": "0.01",
+  "version": "0.02",
   "description": "A clock face featuring Sushang",
   "icon": "docs/icon.png",
   "screenshots": [
