@@ -1,7 +1,7 @@
 {
   "id": "kobeniclock",
   "name": "Kobeni Clock",
-  "version": "0.02",
+  "version": "0.03",
   "description": "A clock face featuring Kobeni",
   "readme": "README.md",
   "icon": "docs/kobeniclock.png",
