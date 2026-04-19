@@ -3,6 +3,7 @@
   "name": "Kobeni Clock",
   "version": "0.02",
   "description": "A clock face featuring Kobeni",
+  "readme": "README.md",
   "icon": "docs/kobeniclock.png",
   "screenshots": [
     {

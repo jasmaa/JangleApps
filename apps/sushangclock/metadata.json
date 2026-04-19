@@ -3,6 +3,7 @@
   "name": "Sushang Clock",
   "version": "0.02",
   "description": "A clock face featuring Sushang",
+  "readme": "README.md",
   "icon": "docs/icon.png",
   "screenshots": [
     {
