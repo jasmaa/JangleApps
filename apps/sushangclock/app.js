@@ -13,14 +13,17 @@ let drawTimeout;
 let draw = function () {
   var date = new Date();
   var timeStr = require("locale").time(date, 1);
+  var dateStr = require("locale").date(date, 1);
   var meridian = require("locale").meridian(date);
   g.reset();
   g.clearRect(20, Y - 50, 150, Y);
   g.setFont("7x11Numeric7Seg", 4);
   g.setFontAlign(1, 1);
-  g.drawString(timeStr, X, Y, true);
+  g.drawString(timeStr, X - 2, Y + 5, true);
   g.setFont("4x6", 3);
-  g.drawString(meridian, X + 25, Y, true);
+  g.drawString(meridian, X + 23, Y + 8, true);
+  g.setFont("4x6", 2);
+  g.drawString(dateStr, X - 70, Y - 45, true);
 
   // queue next draw
   if (drawTimeout) clearTimeout(drawTimeout);
@@ -28,7 +31,7 @@ let draw = function () {
     drawTimeout = undefined;
     draw();
   }, 60000 - (Date.now() % 60000));
-}
+};
 
 Bangle.setUI({
   mode: "clock",
